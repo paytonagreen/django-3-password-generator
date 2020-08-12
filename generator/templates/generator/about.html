@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<style>
+  *{
+    text-align: center;
+  }
+
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+  p{
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  .btn{
+    padding: 10px;
+    background-color: steelblue;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    color: #f4f4f4;
+    transition: 5s;
+  }
+
+  .btn:hover {
+    transform: scale(2);
+    background: #333;
+    color: red;
+  }
+</style>
+
+
+<div class="container text-center">
+<h1>About Password Generator</h1>
+
+<p>Welcome to Password Generator! This is my first project using Django, and it's been a very pleasant, developer friendly process so far!</p>
+
+<p>Password Generator allows to you create a custom randomized password for a new account. Randomized passwords are a major tool in the fight against identity theft, and we want to help keep your privacy intact! We allow you to customize password length as well as the types of characters </p>
+
+<a href="{% url 'home' %}" class="btn">Get Generating!</a>
+
+</div>
